@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FFXIV Market Intelligence App – Frontend
 
-## Getting Started
+This is the **frontend** of the FFXIV Market Intelligence App, a tool designed to analyze Final Fantasy XIV marketboard data using the [Universalis API](https://universalis.app/), [Teamcraft API](https://ffxivteamcraft.com) and [XIVAPI](https://xivapi.com/). It consumes the backend services from the [FFXIV Market Intelligence Backend](https://github.com/diogovlm/ffxiv-market-analyzer-backend).
 
-First, run the development server:
+---
+
+## ⚠️ Status: Work in Progress
+
+This project is currently under active development. The frontend is not fully functional yet.
+
+If you're looking to explore what is already implemented, please check out the backend repository linked above.
+
+---
+
+## 📌 MVP1 – Planned Frontend Features
+
+These are the features we plan to implement in the first milestone (MVP1):
+
+### Basic Item Search
+
+- Search input for item ID or name (will use XIVAPI).
+- Show item details such as name, icon, and current price in a selected world.
+
+### Arbitrage Tool
+
+- Allow selecting a sell world and multiple buy worlds.
+- Display cheapest and most expensive worlds with calculated profit.
+
+### Crafting Profit Analyzer
+
+- Input an item or recipe ID.
+- Show list of required ingredients and their prices.
+- Display total material cost, selling price, and profit.
+
+### Alert System
+
+- A button to turn the alert system on/off.
+- Visual display of generated alerts with profit and market details.
+- Frontend trigger to run the scan with custom filters.
+
+---
+
+## 🔧 Technologies
+
+- React + TypeScript
+- Axios
+- SASS (SCSS)
+- Backend Integration via RESTful API
+
+---
+
+## 📦 Installation (Soon)
+
+Once the first implementation is complete, you’ll be able to:
 
 ```bash
+git clone https://github.com/diogovlm/ffxiv-market-frontend.git
+cd ffxiv-market-frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Related Repositories
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend API (Node.js + MongoDB): https://github.com/diogovlm/ffxiv-market-analyzer-backend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributions
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is a personal portfolio project. Feel free to suggest features or open pull requests.
